@@ -1,0 +1,33 @@
+[flake8]
+# Configuration flake8 pour le projet de suivi énergétique
+
+# Ignorer certaines erreurs
+ignore = E203, W503, E501
+
+# Longueur maximale des lignes
+max-line-length = 100
+
+# Exclure les répertoires
+exclude =
+    .git,
+    __pycache__,
+    .pytest_cache,
+    .venv,
+    venv,
+    build,
+    dist
+
+# Nombre maximal de complexité cyclomatique
+max-complexity = 10
+
+# Options de format
+format = default
+
+# Vérifier aussi les docstrings
+doctests = False
+
+# Afficher les statistiques
+statistics = True
+
+# Options pour les imports
+import-order-style = google
